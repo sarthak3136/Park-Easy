@@ -1,0 +1,86 @@
+/* Add these styles to your existing CSS or create a new file */
+
+.form-label {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  color: #348e49; /* Green color */
+  font-weight: bold; /* Make the font bold */
+}
+
+.form-input {
+  font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+.submit-button {
+  font-size: 1rem; /* Adjust font size as needed */
+  background-color: #348e49; /* Green color */
+  border-color: #0f6022; /* Green color for border */
+}
+
+.submit-button:hover {
+  background-color: #215a2e;
+}
+
+.loader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.car__body {
+  animation: shake 0.2s ease-in-out infinite alternate;
+}
+
+.car__line {
+  transform-origin: center right;
+  stroke-dasharray: 22;
+  animation: line 0.8s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+.car__line--top {
+  animation-delay: 0s;
+}
+
+.car__line--middle {
+  animation-delay: 0.2s;
+}
+
+.car__line--bottom {
+  animation-delay: 0.4s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(-1%);
+  }
+  100% {
+    transform: translateY(3%);
+  }
+}
+
+@keyframes line {
+  0% {
+    stroke-dashoffset: 22;
+  }
+
+  25% {
+    stroke-dashoffset: 22;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+
+  51% {
+    stroke-dashoffset: 0;
+  }
+
+  80% {
+    stroke-dashoffset: -22;
+  }
+
+  100% {
+    stroke-dashoffset: -22;
+  }
+}

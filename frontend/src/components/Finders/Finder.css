@@ -1,0 +1,32 @@
+.custom-list-group {
+  border: 2px solid #17b12b;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.custom-list-item {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.custom-list-item:hover {
+  background-color: rgb(214, 240, 214);
+  transform: scale(1.02);
+}
+
+.custom-card {
+  border: 1px solid #03370a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-title {
+  color: #35a444; /* Set title color */
+}
+
+.custom-list {
+  color: #333; /* Set list item color */
+}
